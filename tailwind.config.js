@@ -1,9 +1,7 @@
 module.exports = {
   content: [
-    './src/**/*.html',
-    './src/**/*.vue',
-    './src/**/*.jsx',
-    './src/**/*.js',
+    './public/**/*.html',
+    './src/**/*.{js,jsx,ts,tsx,vue}',
   ],
   darkMode: true, // or 'media' or 'class'
   theme: {
@@ -61,6 +59,7 @@ module.exports = {
       "rounded-50": "50px",
     },
     width: {
+      7: '7px',
       74: "74px",
       128: "128px",
       140: "140px",
@@ -88,6 +87,7 @@ module.exports = {
       940: "940px",
     },
     height: {
+      4: "4px",
       44: "44px",
       64: "64px",
       109: "109px",
