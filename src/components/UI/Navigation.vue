@@ -84,6 +84,9 @@ export default {
         </li>
       </ul>
     </div>
+    <div class="navigation-logo">
+      <img src="" alt="">
+    </div>
   </div>
 </template>
 
