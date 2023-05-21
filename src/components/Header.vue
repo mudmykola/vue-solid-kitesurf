@@ -1,8 +1,9 @@
 <script>
-import HeaderNav from './UI/HeaderNav.vue';
+import Navigation from "@/components/UI/Navigation.vue";
 export default {
     components: {
-        HeaderNav,
+      Navigation,
+
     },
 };
 </script>
@@ -10,7 +11,7 @@ export default {
 
 <template>
     <div class=" container-1320">
-        <HeaderNav />
+        <Navigation/>
     </div>
 </template>
 
