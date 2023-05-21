@@ -153,14 +153,10 @@ export default {
         <CustomButton :text="btnText" :url="btnUrl"/>
       </div>
     </div>
-
   </div>
 </template>
-
-
 <style lang="scss" scoped>
 @use "src/styles/variables" as var;
-
 .navigation {
   &-contacts {
     a {
@@ -172,14 +168,12 @@ export default {
     }
   }
 }
-
 .menu {
   &-submenu {
     @extend %btn-ef;
     padding: 10px;
   }
 }
-
 .rotate {
   transform: rotate(180deg);
   @extend %dtrans;

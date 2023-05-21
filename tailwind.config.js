@@ -39,6 +39,7 @@ module.exports = {
             32: "32px",
             40: "40px",
             48: "48px",
+            58: "58px",
         },
         lineHeight: {
             16: "16px",
@@ -50,6 +51,7 @@ module.exports = {
             36: "36px",
             44: "44px",
             52: "52px",
+            62: "62px",
         },
         boxShadow: {
             "border-ef": "0px 2px 10px rgba(48, 36, 35, 0.2)",
@@ -71,6 +73,7 @@ module.exports = {
             155: "155px",
             160: "160px",
             170: "170px",
+            188: "188px",
             270: "270px",
             280: "280px",
             320: "320px",
@@ -86,6 +89,7 @@ module.exports = {
             584: "584px",
             655: "655px",
             672: "672px",
+            820: "820px",
             847: "847px",
             920: "920px",
             940: "940px",
@@ -94,17 +98,19 @@ module.exports = {
             4: "4px",
             40: "40px",
             44: "44px",
+            58: "58px",
             64: "64px",
             109: "109px",
+            768:"768px",
         },
         borderWidth: {
             100: "100px",
         },
         borderRadius: {
-
             4: "4px",
             8: "8px",
             10: "10px",
+            20: "20px",
         },
         screens: {
             m320: '320px',
