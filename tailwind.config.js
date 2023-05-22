@@ -27,6 +27,9 @@ module.exports = {
             "font-b": "700",
             "font-bl": "900",
         },
+        right: {
+          "r50": "50px",
+        },
         fontSize: {
             11: "11px",
             12: "12px",
