@@ -1,6 +1,6 @@
 import {defineStore} from 'pinia'
 
-export const useLessonsTextStore = defineStore('titleStore',{
+export const useLessonsTextStore = defineStore('lessons',{
     state: () => ({
         title: 'Kitesurfing Lessons"',
         desc: [{
@@ -12,6 +12,16 @@ export const useLessonsTextStore = defineStore('titleStore',{
             text: 'Our expert instructors provide personalized kite lessons in Obidos, ensuring a thrilling and' +
                 ' safe experience for kitesurfing enthusiasts of all skill levels. Join us for unforgettable Portugal kitesurfing lessons, and let your kiteboarding journey take flight on the breathtaking shores of Obidos! 🏝️'
         },],
+        lessonsList: [
+            {
+                id:1,
+                textLink: 'Wingfoil',
+                urlLink: '/',
+                image: 'lessons-img-link-1.webp',
+                alt:" lessons-img",
+                icon: 'arrrow-link.svg',
+            }
+        ],
     }),
     getters: {
         getTitle: (state) => state.title,
