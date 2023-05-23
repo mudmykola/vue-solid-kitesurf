@@ -17,6 +17,7 @@ module.exports = {
             c100: "#0A2540",
             c101: "#27DEC5",
             c102: "#FFDE0F",
+            c103: "#EBFBFF",
 
             default: "#fff",
         },
@@ -94,6 +95,7 @@ module.exports = {
             513: "513px",
             584: "584px",
             655: "655px",
+            670: "670px",
             672: "672px",
             820: "820px",
             847: "847px",
