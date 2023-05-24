@@ -36,14 +36,18 @@ export default {
   &--link {
     right: 11%;
     z-index: 999;
+    @extend %dtrans;
+    &:hover a {
+      @extend %htrans;
+      color: var.$c102;
+    }
   }
   &--item {
-
     @extend %dtrans;
-&:hover>span{
-  @extend %htrans;
-  height: 70%;
-}
+    &:hover > span {
+      @extend %htrans;
+      height: 70%;
+    }
     span {
       @extend %dtrans;
       @extend %mask-effect;
@@ -51,7 +55,6 @@ export default {
       height: 100%;
       bottom: 0;
       left: 0;
-
     }
   }
 }
