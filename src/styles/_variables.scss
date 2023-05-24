@@ -2,6 +2,7 @@
 $c100: #0A2540;
 $c101: #27DEC5;
 $c102: #FFDE0F;
+$c103: #EBFBFF;
 $default: #fff;
 
 
@@ -115,4 +116,10 @@ $desktop__basic: 1440px;
 
 %btn-ef{
   box-shadow: 0px 2px 10px rgba(48, 36, 35, 0.2);
+}
+
+%mask-effect{
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.45) 18.95%, rgba(0, 0, 0, 0) 50.11%);
+  border-radius: 20px;
+  transform: rotate(-180deg);
 }

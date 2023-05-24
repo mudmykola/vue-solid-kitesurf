@@ -1,11 +1,19 @@
 <script>
-export default {};
+import LessonsContent from "@/components/UI/LessonsContent.vue";
+
+
+export default {
+  components: {
+    LessonsContent,
+  },
+};
 </script>
 
 <template>
-  <div class=" container-1320">
-    <h2>Lessons.vue</h2>
-
+  <div class="lessons container-1320 ">
+    <div class="lessons-content" >
+      <LessonsContent/>
+    </div>
   </div>
 </template>
 
