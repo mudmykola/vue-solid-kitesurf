@@ -62,12 +62,9 @@ module.exports = {
         boxShadow: {
             "border-ef": "0px 2px 10px rgba(48, 36, 35, 0.2)",
             "border-ef-2": "0px 2px 10px rgba(48, 36, 35, 0.8)",
+            "border-ef-cards":"0px 10px 40px -8px rgba(10, 37, 64, 0.0973831)",
         },
-        borderRadius: {
-            "rounded-8": "8px",
-            "rounded-30": "30px",
-            "rounded-50": "50px",
-        },
+
         width: {
             7: '7px',
             74: "74px",
@@ -80,13 +77,17 @@ module.exports = {
             160: "160px",
             170: "170px",
             188: "188px",
+            193: "193px",
+            220: "220px",
             252: "252px",
             270: "270px",
             280: "280px",
             320: "320px",
             325: "325px",
+            331: "331px",
             350: "350px",
             371: "371px",
+            392: "392px",
             400: "400px",
             415: "415px",
             444: "444px",
