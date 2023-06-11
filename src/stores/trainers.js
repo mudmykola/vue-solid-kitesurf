@@ -8,12 +8,24 @@ export const useTrainersStore = defineStore('trainers', {
         trainersList: [
             {
                 id: 1,
-                textLink: 'Wingfoil',
-                urlLink: '/',
-                image: 'lessons-img-link-1.webp',
-                alt: " lessons-img",
-                icon: 'arrrow-link.svg',
-                iconAlt: 'arrow-icon',
+                nameTrainers: 'Mike Jones',
+                trainersLink: '/',
+                image: 'trainers-1.webp',
+                alt: " trainers-img-1",
+            },
+            {
+                id: 2,
+                nameTrainers: 'Elisa Stone',
+                trainersLink: '/',
+                image: 'trainers-2.webp',
+                alt: " trainers-img-2",
+            },
+            {
+                id: 3,
+                nameTrainers: 'Tony Kent',
+                trainersLink: '/',
+                image: 'trainers-3.webp',
+                alt: " trainers-img-3",
             },
 
         ],
