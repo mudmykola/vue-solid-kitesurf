@@ -3,7 +3,7 @@ module.exports = {
         './public/**/*.html',
         './src/**/*.{js,jsx,ts,tsx,vue}',
     ],
-    darkMode: true, // or 'media' or 'class'
+    darkMode: true,
     theme: {
         animation: {
             'pulse-5': 'pulse 5s linear infinite',

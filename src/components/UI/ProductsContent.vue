@@ -70,7 +70,6 @@ export default {
     const productTitle = productsStore.GET_TITLE;
     const productCards = productsStore.GET_PRODUCT_CARDS;
 
-
     const visibleCardsCount = ref(3);
     const increment = 3;
 
@@ -80,7 +79,6 @@ export default {
     const hasHiddenCards = computed(() => {
       return visibleCardsCount.value < productCards.length;
     });
-
     const loadMoreCards = () => {
       const remainingCards = productCards.slice(visibleCardsCount.value);
       const additionalCards = remainingCards.slice(0, increment);
@@ -95,18 +93,14 @@ export default {
       loadMoreCards,
     };
   },
-
-
 };
 </script>
-
 <style lang="scss" scoped>
 @use "src/styles/variables" as var;
 .products-content{
   &__item{
     @extend %dtrans;
     :hover{
-
       @extend %htrans;
       @extend %border-ef;
     }
