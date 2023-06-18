@@ -1,9 +1,10 @@
 <template>
-  <div class="follow-content ">
+  <div class="follow-content pt-24 ">
     <div class="follow-content__text">
       <FollowTitle  :subtitle="subtitle" :title="title" :desc="desc" />
-      <div class="follow-content__text--reviews">
+      <div class="follow-content__text--reviews flex items-center ">
         <FollowReviews  :numberRating="numberRating" :numberReviews="numberReviews" />
+        <FollowCommunity class="ml-12"/>
       </div>
     </div>
     <div class="follow-content__img"></div>
@@ -13,10 +14,11 @@
 <script>
 import FollowTitle from "@/components/UI/FollowTitle.vue";
 import FollowReviews from "@/components/UI/FollowReviews.vue";
+import FollowCommunity from "@/components/UI/FollowCommunity.vue";
 
 export default {
   name: "FollowContent",
-  components: {FollowReviews, FollowTitle},
+  components: {FollowCommunity, FollowReviews, FollowTitle},
   props: {
     subtitle: {
       type: String,
