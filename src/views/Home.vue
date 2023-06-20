@@ -5,6 +5,7 @@
     <Products/>
     <Trainers/>
     <Follow/>
+    <Reviews/>
   </main>
 </template>
 <script setup>
@@ -13,6 +14,7 @@ import Lessons from '../components/Lessons.vue';
 import Products from "@/components/Products.vue";
 import Trainers from "@/components/Trainers.vue";
 import Follow from "@/components/Follow.vue";
+import Reviews from "@/components/Reviews.vue";
 
 
 </script>
