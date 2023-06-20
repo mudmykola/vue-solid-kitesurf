@@ -1,5 +1,5 @@
 <template>
-  <div class="follow-content pt-24 flex">
+  <div class="follow-content pt-24 flex justify-center">
     <div class="follow-content__text">
       <FollowTitle  :subtitle="subtitle" :title="title" :desc="desc" />
       <div class="follow-content__text--reviews flex items-center ">
@@ -7,7 +7,7 @@
         <FollowCommunity class="ml-12"/>
       </div>
     </div>
-    <div class="follow-content__img">
+    <div class="follow-content__img pl-14">
       <FollowImage/>
     </div>
   </div>

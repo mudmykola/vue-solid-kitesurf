@@ -38,12 +38,17 @@ export const useFollowersStore = defineStore({
                 image: 'follow-image-2.webp',
                 alt: 'follow-image-2'
             },
+
+        ],
+        followImageThird: [
+
             {
-                id: 2,
+                id: 1,
                 image: 'follow-image-3.webp',
                 alt: 'follow-image-3'
             },
-        ]
+        ],
+
     }),
 
 });
