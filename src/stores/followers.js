@@ -25,6 +25,30 @@ export const useFollowersStore = defineStore({
                alt: 'ava-4'
            },
        ],
+        followImageFirst: [
+            {
+                id: 1,
+                image: 'follow-image-1.webp',
+                alt: 'follow-image-1'
+            },
+        ],
+        followImageSecond: [
+            {
+                id: 1,
+                image: 'follow-image-2.webp',
+                alt: 'follow-image-2'
+            },
+
+        ],
+        followImageThird: [
+
+            {
+                id: 1,
+                image: 'follow-image-3.webp',
+                alt: 'follow-image-3'
+            },
+        ],
+
     }),
 
 });

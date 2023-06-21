@@ -21,7 +21,7 @@ export default {
             <a class="text-24 leading-28 font-font-bl text-default" :href="item.urlLink">{{
                 item.textLink
               }}</a>
-            <img class="" :src="`/src/assets/image/svg/${item.icon}`" :alt="item.iconAlt"/>
+            <img  :src="`/src/assets/image/svg/${item.icon}`" :alt="item.iconAlt"/>
           </div>
         </div>
         <span class="absolute"></span>
