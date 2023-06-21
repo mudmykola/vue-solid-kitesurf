@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import ReviewsContent from "@/components/ReviewsContent.vue";
+import ReviewsContent from "@/components/UI/ReviewsContent.vue";
 
 export default {
   name: "Reviews",
