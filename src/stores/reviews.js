@@ -3,12 +3,13 @@ import axios from 'axios';
 
 export const useUserStore = defineStore('user', {
     state: () => ({
-        users: [],
-        filledStars: 0,
+        users: JSON.parse(localStorage.getItem('users')) || [],
+        filledStars: JSON.parse(localStorage.getItem('filledStars')) || 0,
     }),
     actions: {
         async fetchUsersData() {
             try {
+                const timestamp = Date.now();
                 const avatarResponse = await axios.get('https://randomuser.me/api/?results=3');
                 const avatarData = avatarResponse.data.results;
 
@@ -24,6 +25,7 @@ export const useUserStore = defineStore('user', {
                 }));
 
                 this.users = users;
+                localStorage.setItem('users', JSON.stringify(users)); // Зберегти дані в localStorage
             } catch (error) {
                 console.log(error);
             }
@@ -34,6 +36,7 @@ export const useUserStore = defineStore('user', {
             } else {
                 this.filledStars = index;
             }
+            localStorage.setItem('filledStars', JSON.stringify(this.filledStars)); // Зберегти дані в localStorage
         },
     },
 });
