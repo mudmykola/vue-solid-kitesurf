@@ -1,9 +1,9 @@
 <template>
   <nav class="flex">
-    <div v-for="block in navigationBlocks" :key="block.id" class="navigation-block">
-      <ul >
-        <li v-for="item in block.items" :key="item.id">
-          <router-link  :to="item.route">{{ item.label }}</router-link>
+    <div v-for="block in navigationBlocks" :key="block.id" class="navigation-block ">
+      <ul  >
+        <li  v-for="item in block.items" :key="item.id">
+          <router-link :to="item.route">{{ item.label }}</router-link>
         </li>
       </ul>
     </div>
@@ -65,4 +65,6 @@ export default {
 
 <style lang="scss" scoped>
 @use "src/styles/variables" as var;
+
+
 </style>
