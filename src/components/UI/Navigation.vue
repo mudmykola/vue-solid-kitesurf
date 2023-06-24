@@ -1,3 +1,66 @@
+<template>
+  <div class="navigation flex items-center justify-between pt-4 pb-5">
+    <div class="navigation-menu">
+      <ul class="flex items-center gap-9">
+        <li v-for="(menuItem, index) in menuItems" :key="index">
+          <div class="menu-item relative " v-if="menuItem.subMenu">
+            <a class="flex items-center mx-auto cursor-pointer font-font-sb text-13 leading-17 "
+               @click="toggleSubMenu(index)">
+              {{
+                menuItem.title
+              }}
+              <svg-icon :class="{ 'rotate': isSubMenuOpen === index }" class=" w-7  mx-auto  max-h-full ml-1 "
+                        type="mdi"
+                        :path="path"></svg-icon>
+            </a>
+            <ul class="menu-submenu absolute bg-default  rounded-4 text-center " v-show="isSubMenuOpen === index">
+              <li class="menu-submenu__item  hover:text-c101 "
+                  v-for="(subMenuItem, subIndex) in menuItem.subMenu" :key="subIndex">
+                <router-link class="menu-submenu__item--link text-11 text-11 leading-17 font-font-l"
+                             :to="subMenuItem.url">{{
+                    subMenuItem.name
+                  }}
+                </router-link>
+              </li>
+            </ul>
+          </div>
+          <router-link class="font-font-sb text-13 leading-17 flex items-center" v-else :to="menuItem.url">{{
+              menuItem.title
+            }}
+          </router-link>
+        </li>
+      </ul>
+    </div>
+    <div class="navigation-logo">
+      <a :href="logo.logoLink">
+        <img :src="logo.img" :alt="logo.altImg">
+      </a>
+
+    </div>
+    <div class="navigation-func flex items-center gap-6">
+      <div class="navigation-address flex items-center">
+        <svg-icon :class="iconColor" type="mdi" :path="address.path"></svg-icon>
+        <p class="text-12 leading-16 font-font-m  w-108 pl-1"> {{
+            address.text
+          }}</p>
+      </div>
+      <div class="navigation-contacts text-center">
+        <p class="text-12 leading-16 font-font-m ">{{
+            contacts.text
+          }}</p>
+        <a class="text-12 leading-16 font-font-b hover:text-c101" :href="contacts.url">{{
+            contacts.phone
+          }}</a>
+      </div>
+      <div class="navigation-social">
+        <CustomSocial/>
+      </div>
+      <div class="navigation-btn">
+        <CustomButton :text="btnText" :url="btnUrl"/>
+      </div>
+    </div>
+  </div>
+</template>
 <script>
 import Logo from '@/assets/image/svg/logo.svg';
 import SvgIcon from '@jamescoyle/vue-icon';
@@ -92,69 +155,6 @@ export default {
   }
 };
 </script>
-<template>
-  <div class="navigation flex items-center justify-between pt-4 pb-5">
-    <div class="navigation-menu">
-      <ul class="flex items-center gap-9">
-        <li v-for="(menuItem, index) in menuItems" :key="index">
-          <div class="menu-item relative " v-if="menuItem.subMenu">
-            <a class="flex items-center mx-auto cursor-pointer font-font-sb text-13 leading-17 "
-               @click="toggleSubMenu(index)">
-              {{
-                menuItem.title
-              }}
-              <svg-icon :class="{ 'rotate': isSubMenuOpen === index }" class=" w-7  mx-auto  max-h-full ml-1 "
-                        type="mdi"
-                        :path="path"></svg-icon>
-            </a>
-            <ul class="menu-submenu absolute bg-default  rounded-4 text-center " v-show="isSubMenuOpen === index">
-              <li class="menu-submenu__item  hover:text-c101 "
-                  v-for="(subMenuItem, subIndex) in menuItem.subMenu" :key="subIndex">
-                <router-link class="menu-submenu__item--link text-11 text-11 leading-17 font-font-l"
-                             :to="subMenuItem.url">{{
-                    subMenuItem.name
-                  }}
-                </router-link>
-              </li>
-            </ul>
-          </div>
-          <router-link class="font-font-sb text-13 leading-17 flex items-center" v-else :to="menuItem.url">{{
-              menuItem.title
-            }}
-          </router-link>
-        </li>
-      </ul>
-    </div>
-    <div class="navigation-logo">
-      <a :href="logo.logoLink">
-        <img :src="logo.img" :alt="logo.altImg">
-      </a>
-
-    </div>
-    <div class="navigation-func flex items-center gap-6">
-      <div class="navigation-address flex items-center">
-        <svg-icon :class="iconColor" type="mdi" :path="address.path"></svg-icon>
-        <p class="text-12 leading-16 font-font-m  w-108 pl-1"> {{
-            address.text
-          }}</p>
-      </div>
-      <div class="navigation-contacts text-center">
-        <p class="text-12 leading-16 font-font-m ">{{
-            contacts.text
-          }}</p>
-        <a class="text-12 leading-16 font-font-b hover:text-c101" :href="contacts.url">{{
-            contacts.phone
-          }}</a>
-      </div>
-      <div class="navigation-social">
-        <CustomSocial/>
-      </div>
-      <div class="navigation-btn">
-        <CustomButton :text="btnText" :url="btnUrl"/>
-      </div>
-    </div>
-  </div>
-</template>
 <style lang="scss" scoped>
 @use "src/styles/variables" as var;
 .navigation {
