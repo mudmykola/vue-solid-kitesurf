@@ -1,9 +1,10 @@
 <template>
   <nav class="flex">
-    <div v-for="block in navigationBlocks" :key="block.id" class="navigation-block ">
-      <ul  >
+    <div  v-for="block in navigationBlocks" :key="block.id" class="navigation-block  ">
+      <ul>
         <li  v-for="item in block.items" :key="item.id">
-          <router-link :to="item.route">{{ item.label }}</router-link>
+          <router-link class="text-13 leading-18 font-font-sb text-c100 uppercase " :to="item.route">{{ item.label
+            }}</router-link>
         </li>
       </ul>
     </div>
@@ -65,6 +66,11 @@ export default {
 
 <style lang="scss" scoped>
 @use "src/styles/variables" as var;
-
+.navigation-block{
+  margin-left: 35px;
+  &:first-child{
+    margin-left: 0;
+  }
+}
 
 </style>

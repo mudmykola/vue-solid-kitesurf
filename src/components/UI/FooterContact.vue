@@ -6,7 +6,7 @@
         address.text
       }}</p>
   </div>
-  <div class="footer-contacts text-center">
+  <div class="footer-contacts text-center ml-6">
     <p class="text-12 leading-16 font-font-m ">{{
         contacts.text
       }}</p>
