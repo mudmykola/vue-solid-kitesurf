@@ -59,6 +59,7 @@
         <CustomButton :text="btnText" :url="btnUrl"/>
       </div>
     </div>
+    <BurgerMenu/>
   </div>
 </template>
 <script>
@@ -68,10 +69,12 @@ import {mdiTriangleDown} from '@mdi/js';
 import {mdiMapMarker} from '@mdi/js';
 import CustomButton from "@/components/UI/CustomButton.vue";
 import CustomSocial from "@/components/UI/CustomSocial.vue";
+import BurgerMenu from "@/components/UI/BurgerMenu.vue";
 
 
 export default {
   components: {
+    BurgerMenu,
     CustomSocial,
     CustomButton,
     SvgIcon
@@ -157,6 +160,7 @@ export default {
 </script>
 <style lang="scss" scoped>
 @use "src/styles/variables" as var;
+@use "src/styles/media";
 .navigation {
   &-contacts {
     a {
@@ -182,4 +186,9 @@ export default {
     @extend %htrans;
   }
 }
+
+
+
+
+
 </style>
