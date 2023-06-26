@@ -12,6 +12,9 @@ export const useTrainersStore = defineStore('trainers', {
         }, {
             id: 3, nameTrainers: 'Tony Kent', trainersLink: '/', image: 'trainers-3.webp', alt: " trainers-img-3",
         },
+            {
+                id: 4, nameTrainers: 'Tony Kent', trainersLink: '/', image: 'trainers-3.webp', alt: " trainers-img-3",
+            },
 
         ],
     }), getters: {

@@ -1,5 +1,5 @@
 <template>
-  <nav class="flex">
+  <nav class="footer-navigation flex">
     <div  v-for="block in navigationBlocks" :key="block.id" class="navigation-block  ">
       <ul>
         <li  v-for="item in block.items" :key="item.id">
@@ -66,8 +66,27 @@ export default {
 
 <style lang="scss" scoped>
 @use "src/styles/variables" as var;
+.footer-navigation{
+  position: relative;
+
+  &:after{
+    position: absolute;
+    content: '';
+    background-image: url('@/assets/image/footer-el.webp');
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center;
+    top: -15%;
+    right: -4%;
+    width: 245px;
+    height: 133px;
+    z-index: 55;
+  }
+}
 .navigation-block{
   margin-left: 35px;
+  z-index: 9999;
   &:first-child{
     margin-left: 0;
   }

@@ -1,5 +1,6 @@
 <script>
 export default {
+  name: 'CustomButton',
   data(){
     return {
       isHovered: false,

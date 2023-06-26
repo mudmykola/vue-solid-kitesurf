@@ -1,11 +1,21 @@
+
+
+<template>
+<div class="social flex items-center gap-2">
+  <a class="social-link " v-for="(icon, index) in socialIcons" :key="index" :href="icon.link">
+    <svg-icon :class="{ 'hover': icon.isHovered }" type="mdi" :path="icon.path" @mouseover="handleMouseOver(icon)" @mouseout="handleMouseOut(icon)"></svg-icon>
+  </a>
+</div>
+</template>
+
 <script>
-import Fb from '@/assets/image/svg/fb.svg';
+
 import SvgIcon from '@jamescoyle/vue-icon';
 import { mdiFacebook } from '@mdi/js';
 import { mdiInstagram } from '@mdi/js';
 import { mdiTwitter } from '@mdi/js';
 export default {
-  name: 'CustomButton',
+  name: 'CustomSocial',
   components: {
     SvgIcon
   },
@@ -38,16 +48,6 @@ export default {
   }
 }
 </script>
-
-<template>
-<div class="social flex items-center gap-2">
-  <a class="social-link " v-for="(icon, index) in socialIcons" :key="index" :href="icon.link">
-    <svg-icon :class="{ 'hover': icon.isHovered }" type="mdi" :path="icon.path" @mouseover="handleMouseOver(icon)" @mouseout="handleMouseOut(icon)"></svg-icon>
-  </a>
-</div>
-</template>
-
-
 
 <style lang="scss" scoped>
 @use "src/styles/variables" as var;

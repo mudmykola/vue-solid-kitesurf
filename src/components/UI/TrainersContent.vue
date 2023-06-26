@@ -8,45 +8,56 @@
       }} </p>
   </div>
   <div class="trainers-content__inner pt-11 ">
-    <ul class="grid grid-cols-3 gap-5">
-      <li class=" relative cursor-pointer" v-for="item in trainersList" :key="item.id">
+    <Swiper class="mySwiper "
+            :autoplay="{
+      delay: 2500,
+      disableOnInteraction: false,
+    }"
+            :modules="modules"
+            :slidesPerView="3"
+            :spaceBetween="10"
+    >
+      <SwiperSlide class=" relative cursor-pointer " v-for="item in trainersList" :key="item.id">
         <img class="hover:shadow-border-ef  rounded-20" :src="`/src/assets/image/${item.image}`" :alt="item.alt"/>
         <p class="absolute bottom-8 left-16 text-default text-24 leading-28 font-font-bl  ">{{
             item.nameTrainers
           }}</p>
-      </li>
-    </ul>
+      </SwiperSlide>
+    </Swiper>
   </div>
 </template>
 
 <script>
 import {useTrainersStore} from '@/stores/trainers';
+import {Swiper, SwiperSlide} from 'swiper/vue';
+import {Autoplay} from 'swiper';
+import 'swiper/css';
 
 export default {
   name: "TrainersContent",
+  components: {
+    Swiper, SwiperSlide
+  },
   setup() {
     const trainersStore = useTrainersStore();
     return {
       title: trainersStore.getTitle,
       desc: trainersStore.getDesc,
-      trainersList: trainersStore.trainersList
-
+      trainersList: trainersStore.trainersList,
+      modules: [Autoplay],
     }
   },
-
 }
 </script>
 
 <style lang="scss" scoped>
 @use "src/styles/variables" as var;
-
 .trainers-content {
   &__inner {
     ul {
       li {
         img {
           @extend %dtrans;
-
           &:hover {
             @extend %htrans;
           }
