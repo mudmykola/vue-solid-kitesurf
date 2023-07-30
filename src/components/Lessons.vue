@@ -1,6 +1,6 @@
 
 <template>
-  <div class="lessons container-1320 ">
+  <div class="lessons  sm:container pr-[0.938rem] pl-[0.938rem] ">
     <div class="lessons-content" >
       <LessonsContent/>
     </div>

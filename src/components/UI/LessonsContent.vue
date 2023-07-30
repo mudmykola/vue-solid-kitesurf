@@ -12,9 +12,9 @@ export default {
 }
 </script>
 <template>
-  <div class="lesson-content">
+  <div class="lesson-content " >
     <div class="lessons-content__box flex mt-5 gap-5 ">
-      <LessonsContentText class="lessons-content__text bg-c103 w-670 rounded-20"/>
+      <LessonsContentText class="lessons-content__text bg-c103  rounded-20"/>
       <LessonsContentImage class="lessons-content__image relative   rounded-20" />
     </div>
     <LessonsContentList class="lessons-content__list mt-5"/>

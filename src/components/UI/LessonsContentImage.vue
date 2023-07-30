@@ -18,7 +18,7 @@ export default {
 }
 </script>
 <template>
-<div class="lessons-image ">
+<div class="lessons-image w-[45rem]">
   <img class="lessons-image__el absolute " :src="lessonsEl.img" :alt="lessonsEl.alt">
   <img  :src="lessonsImg.img" :alt="lessonsImg.alt">
 </div>
@@ -51,8 +51,8 @@ export default {
   .lessons-image{
     &__el{
       max-width: 100%;
-      top: 4%;
-      left: -13.8%;
+      top: 7%;
+      left: -12.8%;
     }
   }
 }

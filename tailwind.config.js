@@ -3,6 +3,9 @@ module.exports = {
         './public/**/*.html',
         './src/**/*.{js,jsx,ts,tsx,vue}',
     ],
+    plugins: [
+        require('@tailwindcss/aspect-ratio'),
+    ],
     darkMode: true,
     theme: {
         animation: {

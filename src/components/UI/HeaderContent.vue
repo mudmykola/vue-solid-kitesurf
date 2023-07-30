@@ -38,7 +38,7 @@ export default {
 </script>
 
 <template>
-  <div class="header-content pt-32 pb-80 flex justify-center">
+  <div class="header-content pt-32 pb-80 flex justify-center xl:container sm:container">
     <div class="header-content__title text-center w-820 relative ">
       <img class="absolute  -top-1/4 right-1/3 opacity-70 " :src="HeaderEl.img" :alt="HeaderEl.alt">
       <h2 class="text-58 leading-62 text-default font-font-bl pb-7">{{

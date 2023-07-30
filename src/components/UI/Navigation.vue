@@ -1,5 +1,5 @@
 <template>
-  <div class="navigation flex items-center justify-between pt-4 pb-5 container-1320">
+  <div class="navigation flex items-center justify-between pt-4 pb-5 xl:container sm:max-w-full pr-[0.938rem] pl-[0.938rem]">
     <div class="navigation-menu">
       <ul class="flex items-center gap-9">
         <li v-for="(menuItem, index) in menuItems" :key="index">

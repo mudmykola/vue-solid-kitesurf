@@ -30,9 +30,8 @@ export default {
 };
 </script>
 
-
 <template>
-  <div class=" container-1320">
+  <div class="2xl:container sm:container pr-[0.938rem] pl-[0.938rem]">
     <div>
       <HeaderContent :title="title" :desc="desc"  class=" rounded-20 h-768 " :style="bg"/>
     </div>
