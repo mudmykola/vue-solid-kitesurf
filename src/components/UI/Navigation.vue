@@ -1,5 +1,5 @@
 <template>
-  <div class="navigation flex items-center justify-between pt-4 pb-5">
+  <div class="navigation flex items-center justify-between pt-4 pb-5 container-1320">
     <div class="navigation-menu">
       <ul class="flex items-center gap-9">
         <li v-for="(menuItem, index) in menuItems" :key="index">
@@ -119,7 +119,7 @@ export default {
         {
           title: 'Lessons',
           subMenu: [
-            {name: 'SubLink-1', url: '/sublink1'},
+            {name: 'Kitesurfing', url: '/kitesurfing'},
             {name: 'SubLink-1', url: '/sublink2'},
             {name: 'SubLink-1', url: '/sublink3'}
           ]
