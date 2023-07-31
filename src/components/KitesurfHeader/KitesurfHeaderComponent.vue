@@ -1,5 +1,5 @@
 <template>
-  <div class="kitesurf-inner pt-[0.938rem] flex justify-between">
+  <div class="kitesurf-inner pt-[0.938rem] flex justify-between ">
     <div class="kitesurf-text bg-c103 rounded-[1.25rem] w-[61.563rem] relative z-[9999]">
       <div class="kitesurf-text__box w-[46.375rem] py-[5.375rem] px-[5.375rem]">
         <div class="kitesurf-text__box--el absolute top-[-1rem] right-[20.25rem] z-[-1]">
