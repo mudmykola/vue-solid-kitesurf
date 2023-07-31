@@ -4,7 +4,10 @@
     <main>
       <slot />
     </main>
-    <Footer />
+    <div class="xl:container  pr-[0.938rem] pl-[0.938rem]">
+      <Footer />
+    </div>
+
   </div>
 </template>
 <script setup>

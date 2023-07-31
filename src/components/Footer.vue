@@ -1,5 +1,5 @@
 <template>
-<div class="footer bg-c103 rounded-20 container-1320">
+<div class="footer bg-c103 rounded-20">
   <FooterContent/>
 </div>
 </template>

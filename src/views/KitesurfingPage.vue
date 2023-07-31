@@ -1,9 +1,8 @@
 <template>
 <EmptyLayout>
-  <div class="container-1320">
+  <div class="xl:container pr-[0.938rem] pl-[0.938rem]">
     <KitesurfHeaderComponent />
   </div>
-
 </EmptyLayout>
 </template>
 
