@@ -1,9 +1,9 @@
 <template>
-  <div class="navigation flex items-center justify-between pt-4 pb-5">
+  <div class="navigation flex items-center justify-between pt-4 pb-5 xl:container sm:max-w-full pr-[0.938rem] pl-[0.938rem]">
     <div class="navigation-menu">
       <ul class="flex items-center gap-9">
         <li v-for="(menuItem, index) in menuItems" :key="index">
-          <div class="menu-item relative " v-if="menuItem.subMenu">
+          <div class="menu-item relative  z-[99999]" v-if="menuItem.subMenu">
             <a class="flex items-center mx-auto cursor-pointer font-font-sb text-13 leading-17 "
                @click="toggleSubMenu(index)">
               {{
@@ -13,7 +13,7 @@
                         type="mdi"
                         :path="path"></svg-icon>
             </a>
-            <ul class="menu-submenu absolute bg-default  rounded-4 text-center " v-show="isSubMenuOpen === index">
+            <ul class="menu-submenu absolute bg-default  rounded-4 text-center" v-show="isSubMenuOpen === index">
               <li class="menu-submenu__item  hover:text-c101 "
                   v-for="(subMenuItem, subIndex) in menuItem.subMenu" :key="subIndex">
                 <router-link class="menu-submenu__item--link text-11 text-11 leading-17 font-font-l"
@@ -71,7 +71,6 @@ import CustomButton from "@/components/UI/CustomButton.vue";
 import CustomSocial from "@/components/UI/CustomSocial.vue";
 import BurgerMenu from "@/components/UI/BurgerMenu.vue";
 
-
 export default {
   components: {
     BurgerMenu,
@@ -119,7 +118,7 @@ export default {
         {
           title: 'Lessons',
           subMenu: [
-            {name: 'SubLink-1', url: '/sublink1'},
+            {name: 'Kitesurfing', url: '/kitesurfing'},
             {name: 'SubLink-1', url: '/sublink2'},
             {name: 'SubLink-1', url: '/sublink3'}
           ]

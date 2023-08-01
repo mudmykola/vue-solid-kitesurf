@@ -1,5 +1,5 @@
 <template>
-  <main>
+  <EmptyLayout>
     <Header/>
     <Lessons/>
     <Products/>
@@ -7,8 +7,7 @@
     <Follow/>
     <Reviews/>
     <Banner/>
-    <Footer/>
-  </main>
+  </EmptyLayout>
 </template>
 <script setup>
 import Header from '@/components/Header.vue';
@@ -18,7 +17,5 @@ import Trainers from "@/components/Trainers.vue";
 import Follow from "@/components/Follow.vue";
 import Reviews from "@/components/Reviews.vue";
 import Banner from "@/components/Banner.vue";
-import Footer from "@/components/Footer.vue";
-
-
+import EmptyLayout from "@/layouts/EmptyLayout.vue";
 </script>

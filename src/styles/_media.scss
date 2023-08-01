@@ -24,4 +24,31 @@
       display: block;
     }
   }
+  .header-content{
+    &__title{
+      h2{
+        font-size: 38px;
+        line-height: 50px;
+      }
+      img{
+        right: 6%;
+      }
+    }
+  }
+  .lessons{
+    &-content{
+
+      &__box{
+        max-width: 100%;
+        flex-direction: column;
+      }
+      &__text{
+
+        h2{
+          font-size: 32px;
+          line-height: 40px;
+        }
+      }
+    }
+  }
 }

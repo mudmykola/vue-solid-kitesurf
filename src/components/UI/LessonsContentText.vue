@@ -28,7 +28,7 @@ export default {
 }
 </script>
 <template>
-    <div class="lessons-content__box w-500 pt-24 pr-20  pb-24 pl-20">
+    <div class="lessons-content__box w-[58rem] pt-24 pr-20  pb-24 pl-20">
       <h2 class=" text-38 leading-42 font-font-bl pb-5">{{
           title
         }}</h2>
