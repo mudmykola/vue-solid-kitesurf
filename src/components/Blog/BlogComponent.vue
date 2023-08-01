@@ -10,6 +10,4 @@
 
 <script setup>
 import BlogListComponent from "@/components/Blog/BlogListComponent.vue";
-
-
 </script>
